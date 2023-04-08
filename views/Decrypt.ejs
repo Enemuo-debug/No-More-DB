@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Decrypter</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        header {
+            background-color: rgb(0, 0, 0);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 5px;
+            text-align: center;
+            border-radius: 10px;
+            border-color: white;
+            border-style: groove;
+        }
+        header h1 {
+            margin: 0px;
+            color: whitesmoke;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header p {
+            margin: 0px;
+            color: rgb(255, 255, 255);
+            padding-left: 0px;
+            padding-right: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h1 {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            size: 50px;
+            text-align: center;
+        }
+        .Milky {
+            background-size: cover;
+            background-color: rgb(17, 17, 17);
+            border-radius: 5px;
+            text-decoration: underline white;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        .Milky textarea {
+            border-radius: 50px;
+            padding: 30px;
+            border: none;
+            font-family: cursive;
+            width: 900px;
+            height: 300px;
+            color: rgb(255, 0, 0);
+            margin: 10px;
+        }
+        .Milky button {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            border-radius: 300px;
+            color: white;
+            background-color: black;
+        }
+        .Milky input {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            font-family: cursive;
+            border-radius: 10px;
+            border-color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 2px;
+        }
+
+        footer {
+            color: white;
+            background-color: rgb(117, 117, 117);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>- Welcome to my Word Decrypter Web Application -</h1>
+        <p>This is not my first site obviously, So feel at home<br>
+        This is simply a text decrypter. Hence in the form below you are to enter the text you wanna decrypt provided it was encrypted in this same WebApp</p>
+    </header>
+    <div class="Milky">
+        <h1>TEXT COLLECTOR</h1>
+        <form method="post" action="/decrypted">
+            <center><input name="name" placeholder="Unlocking Key"></form>
+            <textarea name="text" id="text" placeholder="Enter text here" col="0" rows="0"></textarea>
+            <br><br><button type="submit">Submit</button></center><br><br>
+            <center><button onclick="assign('/')">ENCRYPT</button></center>
+        </form>
+    </div>
+    <script>
+        function assign(path){
+            location.assign(path)
+        }
+    </script>
+    <footer>
+        <center>Copyright &copy; 2023</center>
+    </footer>
+</body>
+</html>
