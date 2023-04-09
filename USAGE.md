@@ -3,7 +3,7 @@
 
 ## Follow me on Git-Hub
 
-## Clone the file into your system using git clone <SSH Key>
+## Clone the file into your system using git clone https://github.com/Enemuo-debug/No-More-DB.git
 
 ## Install node and NPM (Node Package Manager)
 
